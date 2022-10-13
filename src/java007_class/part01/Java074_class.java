@@ -24,10 +24,15 @@ public class Java074_class {
 //		goods [1].display();
 //		goods [2].display();
 		
-		for (int i= 0; i<goods.length; i++) {
-			goods[i].display();
-		}
+//		for (int i= 0; i<goods.length; i++) {
+//			goods[i].display();
+		process(goods);
 		
+		}
+		public static void process(Goods [] goods){
+			for (int i= 0; i<goods.length; i++) {
+				goods[i].display();
+		}
 		
 	}
 
