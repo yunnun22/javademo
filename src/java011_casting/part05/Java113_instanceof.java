@@ -27,7 +27,7 @@ public static void main(String[] args) {
 	ExamA ea = new ExamC();
 	System.out.println(ea instanceof ExamA);//true
 	System.out.println(ea instanceof ExamB);//true
-	System.out.println(ea instanceof ExamC);//
+	System.out.println(ea instanceof ExamC);//true
 	
 }
 }
