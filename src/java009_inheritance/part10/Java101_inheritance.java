@@ -1,5 +1,7 @@
 package java009_inheritance.part10;
 
+//import java.lang.System;
+//import java.lang.String;
 public class Java101_inheritance {
 
    public static void main(String[] args) {
