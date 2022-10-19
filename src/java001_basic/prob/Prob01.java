@@ -9,13 +9,13 @@ package java001_basic.prob;
 public class Prob01 {
 
 	public static void main(String[] args) {
-		int num = 10;
+		int num = 11;
 		int res;
 		
-		res = num % 0;
-		System.out.println(res);
+
 		//여기에 작성하세요.    
-		
+       
+	
 	}
 
 }

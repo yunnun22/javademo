@@ -11,6 +11,7 @@ public class Prob02 {
 	public static void main(String[] args) {
 		int num = -10;
 		//여기에 작성하시오.
+	
 		
 	}
 
