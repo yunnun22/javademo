@@ -12,9 +12,8 @@ public class Prob01 {
 		int num = 11;
 		int res;
 		
-
-		//여기에 작성하세요.    
-       
+		//여기에 작성하세요.    2
+     
 	
 	}
 
