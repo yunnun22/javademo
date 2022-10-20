@@ -1,4 +1,4 @@
-package java015_exception;
+package java016_stream;
 
 import java.io.File;
 import java.io.FileWriter;

@@ -1,4 +1,4 @@
-package java015_exception;
+package java016_stream;
 /*
  * [순번 이름 평균]입력
  * 
