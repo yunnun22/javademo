@@ -18,9 +18,14 @@ public class Java162_stream {
 			e.printStackTrace();
 		}finally {
 			//stream 연결 종료 (자원반납)
-			is.close();
-		
-		}
-		
-	}
-}
+			try {
+	            is.close();
+	         } catch (IOException e) {
+	            // TODO Auto-generated catch block
+	            e.printStackTrace();
+	         }
+	      }
+
+	   }// end main()
+
+	}// end class
