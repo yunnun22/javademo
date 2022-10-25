@@ -1,4 +1,4 @@
-package ncs.test01;
+package ncs.test1;
 
 public class ArrayTest {
 	public static void main(String[] args) {
@@ -17,10 +17,17 @@ public class ArrayTest {
 				cnt++;
 
 			}}
-			avg = sum /cnt;
+		//	avg = sum /cnt;
 
-			System.out.println("총합 : " + sum);
-			System.out.println("평균 : " + avg);
+			double sum1 = sum;
+	//		double avg1= avg;
+			double avg1=(double)(sum)/cnt;
+			
+//			System.out.println("총합 : " + sum);
+//			System.out.println("평균 : " + avg);
+			
+			System.out.printf("합계 : %.2f\n", sum1);
+			System.out.printf("평균 : %.2f", avg1);
 
 		}
 	}
