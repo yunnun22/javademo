@@ -1,6 +1,5 @@
 package java017_collection.prob;
 
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
@@ -31,31 +30,52 @@ import java.util.Scanner;
 public class Prob003_ArrayList {
 
 	public static void main(String[] args) {
-		String pathFile=".\\src\\java0412_collection\\prob\\phone.txt";
+		String pathFile = ".\\src\\java017_collection\\prob\\phone.txt";
 		ArrayList<SmartPhone> phoneList = phoneProduct(pathFile);
 		prnDisplay(phoneList);
-	}//end main()
-	
+	}// end main()
+
 	private static ArrayList<SmartPhone> phoneProduct(String pathFile) {
 		// phone.txt파일의 데이터를 ArrayList에 저장한후 리턴하는 프로그램을 구현하시오.
+		ArrayList<SmartPhone> aList = new ArrayList<SmartPhone>();
+		Scanner sc = null;
+		try {
+			sc = new Scanner(new File(pathFile));
+			while(sc.hasNextLine()) {
+			String[] line = sc.nextLine().split(":");
+			SmartPhone sp = new SmartPhone();
+			//PROD-00001:아이폰5:940000:4:애플
+			sp.setProductId(line[0]);
+			sp.setName(line[1]);
+			sp.setPrice(Integer.parseInt(line[2]));
+			sp.setAmount(Integer.parseInt(line[3]));
+			sp.setMaker(line[4]);
+			aList.add(sp);
+			}
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			sc.close();
+		}
+		return aList;
+	}// end phoneProduct( )
+
+	private static void prnDisplay(ArrayList<SmartPhone> phoneList) {
+		// phoneList매개변수의 저장된 값을 출력하는 프로그램을 구현하시오.
+		for(int i=0; i<phoneList.size(); i++) {
+			SmartPhone sp = phoneList.get(i);
+			System.out.printf("<< 1 번째 상품 >>\n",i+1);
+			System.out.printf("제품 아이디 : %s\n", sp.getProductId());
+			System.out.printf("제품명 :%s\n", sp.getName());
+			System.out.printf("가격 : %d\n",sp.getPrice());
+			System.out.printf("수령 : %d\n", sp.getAmount());
+			System.out.printf("제조사 : %s\n", sp.getMaker());
+		}
 		
-		return null;
-	}//end phoneProduct( )
-	
-	private static void prnDisplay(ArrayList<SmartPhone> phoneList){
-		//phoneList매개변수의 저장된 값을 출력하는 프로그램을 구현하시오.	
-
-	}//end prnDisplay( )
-
-}//end class
+		
 
 
+	}// end prnDisplay( )
 
-
-
-
-
-
-
-
-
+}// end class
