@@ -18,6 +18,7 @@ public class AccountNumber {
    }
 
    // 잔액 계산
+   
    synchronized public void withDraw() {
 
       if (depositMoney >= balance) {

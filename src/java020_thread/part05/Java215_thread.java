@@ -1,3 +1,4 @@
+
 package java020_thread.part05;
 /*
  * 동기화(synchronized)
