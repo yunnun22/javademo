@@ -15,7 +15,7 @@ public class Java002_comment {
 		
 		//여기에서 3은 각자 다른 메모리에 저장된다. 한번만 사용할 수 있다.
 		System.out.println(3);
-		System.out.println(3);
+		System.out.print(3);
 		System.out.println(3);
 	}
 }

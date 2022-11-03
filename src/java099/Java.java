@@ -1,17 +1,29 @@
 package java099;
 
+
+import java.util.Scanner;
+
 public class Java {
 
-	public static void main(String[] args) {
+	public static void main(String[] args)  {
+System.out.println("메세지를 입력하세요");
+System.out.println("프로그램을 종료하려면 q를 눌러");
 
-int score = 85;
+Scanner scanner = new Scanner(System.in);
+String inputString;
 
-char grade = (score>90)?'A' : (score>80)?'B':'C';
+do {
+	System.out.print(">");
+	inputString = scanner.next();
+	System.out.println(inputString);
+}while(! inputString.equals("q"));
 
-System.out.println(score +" 는 "+ grade +" 급등입니다.");
+System.out.println();
+System.out.println("프로그램종료");
 
-		
 	}
+	
+	
 
 }
 
